@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TConverter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Palm" translatesAutoresizingMaskIntoConstraints="NO" id="rVL-RF-ohE">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0ºC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ART-eU-qaC">
+                                <rect key="frame" x="166.66666666666666" y="347" width="56.666666666666657" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="KJ0-ge-2wy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="0.0" height="2"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="KJ0-ge-2wy"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="KJ0-ge-2wy"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="fDB-K6-9CT">
+                                <rect key="frame" x="70.666666666666686" y="412" width="249" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="YF9-FL-6YF"/>
+                                    <constraint firstAttribute="width" constant="245" id="hio-vP-J8g"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="YF9-FL-6YF"/>
+                                        <exclude reference="hio-vP-J8g"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="YF9-FL-6YF"/>
+                                        <include reference="hio-vP-J8g"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="actionSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="QBM-2d-de4"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TConverter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDV-oy-Ccd">
+                                <rect key="frame" x="111" y="64" width="168" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="6ZJ-GK-6E6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="0.0" height="2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32ºF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKJ-Py-CMV">
+                                <rect key="frame" x="159.66666666666666" y="477" width="71" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Lag-3D-mPv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="0.0" height="2"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Lag-3D-mPv"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Lag-3D-mPv"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rVL-RF-ohE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0bv-TY-jXo"/>
+                            <constraint firstItem="fDB-K6-9CT" firstAttribute="top" secondItem="ART-eU-qaC" secondAttribute="bottom" constant="25" id="I1a-f4-H0d"/>
+                            <constraint firstItem="lKJ-Py-CMV" firstAttribute="top" secondItem="fDB-K6-9CT" secondAttribute="bottom" constant="35" id="JKr-5K-mC3"/>
+                            <constraint firstItem="fDB-K6-9CT" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="MCp-2n-8fZ"/>
+                            <constraint firstItem="JDV-oy-Ccd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="R3v-Hd-pMF"/>
+                            <constraint firstItem="rVL-RF-ohE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="X0G-44-kvi"/>
+                            <constraint firstItem="fDB-K6-9CT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="YH2-WO-Uye"/>
+                            <constraint firstItem="ART-eU-qaC" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="aRH-hg-ddy"/>
+                            <constraint firstItem="lKJ-Py-CMV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="beu-Rb-Dem"/>
+                            <constraint firstItem="fDB-K6-9CT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cw4-XM-Snu"/>
+                            <constraint firstItem="ART-eU-qaC" firstAttribute="bottom" secondItem="fDB-K6-9CT" secondAttribute="bottom" id="f6P-B1-EpD"/>
+                            <constraint firstAttribute="bottom" secondItem="rVL-RF-ohE" secondAttribute="bottom" id="hQL-7W-KKg"/>
+                            <constraint firstItem="JDV-oy-Ccd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="svw-JX-ye9"/>
+                            <constraint firstItem="rVL-RF-ohE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wrX-G9-sm4"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0bv-TY-jXo"/>
+                                <exclude reference="X0G-44-kvi"/>
+                                <exclude reference="hQL-7W-KKg"/>
+                                <exclude reference="wrX-G9-sm4"/>
+                                <exclude reference="R3v-Hd-pMF"/>
+                                <exclude reference="svw-JX-ye9"/>
+                                <exclude reference="aRH-hg-ddy"/>
+                                <exclude reference="f6P-B1-EpD"/>
+                                <exclude reference="JKr-5K-mC3"/>
+                                <exclude reference="beu-Rb-Dem"/>
+                                <exclude reference="I1a-f4-H0d"/>
+                                <exclude reference="MCp-2n-8fZ"/>
+                                <exclude reference="YH2-WO-Uye"/>
+                                <exclude reference="cw4-XM-Snu"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="0bv-TY-jXo"/>
+                                <include reference="X0G-44-kvi"/>
+                                <include reference="hQL-7W-KKg"/>
+                                <include reference="wrX-G9-sm4"/>
+                                <include reference="R3v-Hd-pMF"/>
+                                <include reference="svw-JX-ye9"/>
+                                <include reference="aRH-hg-ddy"/>
+                                <exclude reference="f6P-B1-EpD"/>
+                                <include reference="JKr-5K-mC3"/>
+                                <include reference="beu-Rb-Dem"/>
+                                <include reference="I1a-f4-H0d"/>
+                                <include reference="MCp-2n-8fZ"/>
+                                <exclude reference="YH2-WO-Uye"/>
+                                <include reference="cw4-XM-Snu"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="slider" destination="fDB-K6-9CT" id="Te6-hj-A9C"/>
+                        <outlet property="tFahrenheit" destination="lKJ-Py-CMV" id="o8a-IB-zM1"/>
+                        <outlet property="tСelsius" destination="ART-eU-qaC" id="cib-EN-JpV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.46153846153845" y="108.76777251184834"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Palm" width="4000" height="6000"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
